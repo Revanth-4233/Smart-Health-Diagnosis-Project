@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Smart Health Diagnosis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #06b6d4;
+            --bg-dark: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.8);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: rgba(148, 163, 184, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            background-image:
+                radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            line-height: 2;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--primary), #4f46e5);
+            color: white;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>About Smart Health Diagnosis</h1>
+        </header>
+
+        <div class="card">
+            <h2>🏥 What is Smart Health Diagnosis?</h2>
+            <p>Smart Health Diagnosis is an AI-powered health assessment tool that uses machine learning to analyze
+                symptoms and predict potential health conditions. It's designed to provide quick, preliminary health
+                insights based on user-reported symptoms.</p>
+        </div>
+
+        <div class="card">
+            <h2>🤖 How It Works</h2>
+            <p>The system uses a Random Forest classifier trained on medical symptom-disease data to make predictions.
+                Here's the process:</p>
+            <ul>
+                <li>User selects their current symptoms from a comprehensive list</li>
+                <li>The ML model analyzes the symptom pattern</li>
+                <li>The system returns the most likely condition with confidence score</li>
+                <li>Relevant precautions and recommendations are provided</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>🔬 Technology Stack</h2>
+            <ul>
+                <li><strong>Python</strong> - Core programming language</li>
+                <li><strong>Scikit-learn</strong> - Machine learning library</li>
+                <li><strong>Flask</strong> - Web framework</li>
+                <li><strong>Pandas/NumPy</strong> - Data processing</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>⚠️ Important Disclaimer</h2>
+            <p>This tool is for educational and informational purposes only. It should not be used as a substitute for
+                professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare
+                provider for any health concerns.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="/" class="btn">← Back to Diagnosis</a>
+        </div>
+    </div>
+</body>
+
+</html>
