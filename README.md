@@ -80,6 +80,10 @@ The system can predict 30+ conditions including:
 - Diabetes, Hypertension, Anemia
 - And many more...
 
+## Live Link
+https://smart-health-diagnosis-project.onrender.com/
+
+
 ## Disclaimer
 
 ⚠️ **Important**: This is an AI-based preliminary assessment tool for educational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for accurate diagnosis.
